@@ -15,8 +15,8 @@ type Square struct {
 	a     uint
 }
 
-// Returns the coordinates of the
-// bottom left point of a square
+// Returns the the bottom left
+// point of the square
 func (s Square) End() Point {
 	var end Point
 	end.x = s.start.x + int(s.a)
