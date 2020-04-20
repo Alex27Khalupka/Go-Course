@@ -5,36 +5,35 @@ import (
 	"math"
 )
 
-type Figure interface{
+type Figure interface {
 	area() float64
 	perimeter() float64
 }
 
 // Represents a square with side length equal to a
-type Square struct{
+type Square struct {
 	a float64
 }
 
-func (s Square) area() float64{
-	return s.a*s.a
+func (s Square) area() float64 {
+	return s.a * s.a
 }
 
-func (s Square) perimeter() float64{
-	return s.a*4
+func (s Square) perimeter() float64 {
+	return s.a * 4
 }
-
 
 // Represents a circle with radius equal to r
-type Circle struct{
+type Circle struct {
 	r float64
 }
 
-func (c Circle) area() float64{
-	return math.Pi*c.r*c.r
+func (c Circle) area() float64 {
+	return math.Pi * c.r * c.r
 }
 
-func (c Circle) perimeter() float64{
-	return 2*math.Pi*c.r
+func (c Circle) perimeter() float64 {
+	return 2 * math.Pi * c.r
 }
 
 func main() {
