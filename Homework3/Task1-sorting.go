@@ -7,17 +7,17 @@ import (
 	"time"
 )
 
-// Returns amount of people
+// Len returns amount of people
 func (people People) Len() int {
 	return len(people)
 }
 
-// Swaps i person with j person
+// Swap swaps i person with j person
 func (people People) Swap(i, j int) {
 	people[i], people[j] = people[j], people[i]
 }
 
-// Returns true if B-day of i person is earlier that B-day of j person,
+// Less returns true if B-day of i person is earlier that B-day of j person,
 // if dates are equal - returns true if first name of i person is
 // alphabetically smaller. Else returns false.
 func (people People) Less(i, j int) bool {

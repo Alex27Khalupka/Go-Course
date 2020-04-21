@@ -10,7 +10,7 @@ type Figure interface {
 	perimeter() float64
 }
 
-// Represents a square with side length equal to a
+// type Square represents a square with side length equal to a
 type Square struct {
 	a float64
 }
@@ -23,7 +23,7 @@ func (s Square) perimeter() float64 {
 	return s.a * 4
 }
 
-// Represents a circle with radius equal to r
+// type Circle represents a circle with radius equal to r
 type Circle struct {
 	r float64
 }
