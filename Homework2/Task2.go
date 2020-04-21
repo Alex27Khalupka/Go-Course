@@ -2,7 +2,8 @@ package main
 
 import "fmt"
 
-// Returns the longest word from the slice of strings
+// max gets a slice of strings and
+// returns string - the longest word in the slice.
 func max(StrArray []string) string {
 	var max = ""
 	for _, element := range StrArray {

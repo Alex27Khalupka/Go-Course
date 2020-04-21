@@ -5,7 +5,8 @@ import (
 	"sort"
 )
 
-// Prints map values sorted in order of increasing keys.
+// printSorted gets map(key - integer, value - string),
+// prints map values sorted in order of increasing keys.
 func printSorted(_map map[int]string) {
 	keys := make([]int, 0, len(_map))
 	for key, _ := range _map {

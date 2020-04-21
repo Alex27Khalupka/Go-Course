@@ -2,7 +2,8 @@ package main
 
 import "fmt"
 
-// Returns average value of the array
+// average gets 6 element array of integers and
+// returns floating point number - average value of the array
 func average(array [6]int) float64 {
 	var sum = 0
 	for _, element := range array {

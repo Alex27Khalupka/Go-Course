@@ -2,10 +2,14 @@ package main
 
 import "fmt"
 
-// Returns the copy of the original slice in reverse order.
+// reverse function gets []int64 slice and returns []int64 slice that is
+// a reversed copy of received slice
 func reverse(slice []int64) []int64 {
 	reversedSlice := make([]int64, len(slice), cap(slice))
-	for i := 0; i < len(slice); i++ {
+	if len(slice) == 0 {
+		return reversedSlice
+	}
+	for i := 0; i < len(slice)/2+1; i++ {
 		// position opposite to position i in the slice
 		opp := len(slice) - i - 1
 		reversedSlice[i] = slice[opp]
