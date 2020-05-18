@@ -43,7 +43,7 @@ func main() {
 		// trying to convert message to int.
 		// If successful - multiply by 2.
 		// Else - uppercase the sting.
-		if intMessage, err := strconv.Atoi(message[:len(message) - 1]); err==nil{
+		if intMessage, err := strconv.Atoi(strings.Trim(message, "\n")); err==nil{
 			answer := intMessage * 2
 			// sending answer to client
 			if _, err = conn.Write([]byte(strconv.Itoa(answer) + "\n")); err!=nil{
