@@ -1,1 +1,3 @@
 # Go-Course
+
+## Aliaksandr Khalupka
